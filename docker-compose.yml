@@ -1,0 +1,12 @@
+
+version: '3.9'
+
+services:
+  local:
+    image: my-project:latest
+    ports:
+      - '8080:8080'
+  online:
+    image: my-project:latest
+    ports:
+      - '80:8080'

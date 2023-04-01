@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "my-project"
+version = "0.1.0"
+description = ""
+authors = ["Thomas Marlow <43114877+thomasmarlow@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "my_project", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.4"
+python-socketio = "^5.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
