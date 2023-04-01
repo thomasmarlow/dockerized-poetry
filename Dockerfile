@@ -1,7 +1,6 @@
-FROM python:3.10 as builder
-RUN mkdir /app 
+FROM python:3.10
 WORKDIR /app
-ENV PYTHONPATH=${PYTHONPATH}:${PWD} 
+# ENV PYTHONPATH=${PYTHONPATH}:${PWD} 
 RUN pip3 install poetry
 RUN poetry config virtualenvs.create false
 COPY pyproject.toml /app 
