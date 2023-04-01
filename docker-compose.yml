@@ -6,3 +6,5 @@ services:
     image: my-project:latest
     ports:
       - '8080:8080'
+    volumes:
+      - './.env:/app/.env:ro'
